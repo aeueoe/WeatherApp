@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="main-box">
+        <header>
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="City search" required id="search-form-input"
+                    class="search-form-input" />
+                <input type="submit" value="Search" class="search-button" />
+            </form>
+        </header>
+        <main>
+            <div class="location-and-date">
+                <h1 class="location-and-date-location" id="city">Berlin</h1>
+                <p class="weather-app-details">
+                    <span id="date"></span>
+                    <span id="time"></span>
+                </p>
+            </div>
+            <br>
+            <div class="details">
+                <p id="description"></p>
+            </div>
+            <div class="current-temperature-container">
+                <div class="col-1">
+                    <div class="current-temp" id="temperature"> </div>
+                    <div class="icon-box" id="icon"></div>
+                </div>
+                <div class="col-2">
+                    <p class="weather-app-details">
+                        Rain: <strong id="rain"></strong><br>
+                        Wind: <strong id="wind-speed"></strong>
+                    </p>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    </main>
+    </div>
+    <footer>
+        This project was coded by
+        <a href="https://github.com/aeueoe" target="_blank"> Julia Atamas</a>,
+        is
+        <a href="#" target="_blank">open-sourced on GitHub</a>
+        and
+        <a href="#" target="_blank">hosted on Netlify</a>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
