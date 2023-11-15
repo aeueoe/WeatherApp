@@ -3,15 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fasthand&family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Red+Hat+Display:wght@500;600;700;800;900&family=Roboto+Mono:wght@400;600&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather App</title>
 </head>
 
 <body>
-    <div class="main-box">
+
+    <div class="main-container">
         <header>
             <form class="search-form" id="search-form">
                 <input type="search" placeholder="City search" required id="search-form-input"
@@ -21,32 +26,36 @@
         </header>
         <main>
             <div class="location-and-date">
-                <h1 class="location-and-date-location" id="city">Berlin</h1>
-                <p class="weather-app-details">
+                <h1 class="city" id="city">Berlin</h1>
+                <p class="date-details">
                     <span id="date"></span>
                     <span id="time"></span>
                 </p>
             </div>
-            <br>
-            <div class="details">
-                <p id="description"></p>
+            <div class="units">
+                <a href="#" id="celsius">°C</a>|<a href="#" id="fahrenheit">°F</a>
             </div>
-            <div class="current-temperature-container">
+            <div class="col">
                 <div class="col-1">
-                    <div class="current-temp" id="temperature"> </div>
+                    <div class="current-temp" id="temperature">
+                    </div>
                     <div class="icon-box" id="icon"></div>
                 </div>
                 <div class="col-2">
-                    <p class="weather-app-details">
-                        Rain: <strong id="rain"></strong><br>
-                        Wind: <strong id="wind-speed"></strong>
+                    <p class="current-1">
+                        Condition: <span id="description"></span></br>
+                        Feels like: <span id="actual-feel"></span>
                     </p>
                 </div>
             </div>
-    </div>
-    </div>
-    </div>
-    </main>
+            <p class="current-2">
+                Humidity: <span id="humidity"></span> |
+                Wind:
+                <span id="wind-speed"></span> | Pressure: <span id="pressure"></span>
+            </p>
+            <div class="weather-forecast" id="forecast">
+            </div>
+        </main>
     </div>
     <footer>
         This project was coded by
