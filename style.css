@@ -183,9 +183,7 @@ footer {
   }
 
   .col-1 {
-    display: flex;
-    width: 50%;
-    vertical-align: top;
+    align-items: center;
   }
   .col-2 {
     width: 100%;
