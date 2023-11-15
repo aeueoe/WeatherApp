@@ -157,9 +157,9 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
   .main-container {
-    padding: 20px;
+    padding: 30px;
   }
 
   header {
@@ -183,6 +183,8 @@ footer {
   }
 
   .col-1 {
+    width: 100%;
+    justify-content: center;
     align-items: center;
   }
   .col-2 {
@@ -191,7 +193,7 @@ footer {
   }
 
   .current-temp {
-    font-size: 3em;
+    font-size: 4em;
   }
   .current-2 {
     text-align: center;
@@ -202,6 +204,10 @@ footer {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  .weather-forecast-date {
+    font-size: 1.2em;
   }
   .weather-forecast-day {
     margin: 10px 0;
