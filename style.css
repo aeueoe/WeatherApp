@@ -4,7 +4,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
 }
 
-.main-container {
+.app {
   display: block;
   background: linear-gradient(
     0.2deg,
@@ -12,8 +12,7 @@ body {
     rgb(51, 102, 255) 71.5%
   );
   font-size: 100%;
-  max-width: 620px;
-
+  max-width: 640px;
   margin: 10px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 18px;
@@ -23,12 +22,9 @@ header {
   margin-top: 10px;
 }
 .search-form-input {
-  padding: 15px 20px;
   background: #f8f9f9;
   font-size: 1em;
-  width: 80%;
-  border-radius: 12px;
-  border: none;
+  border-radius: 1em;
   outline-width: 0;
 }
 
@@ -37,13 +33,10 @@ header {
   padding: 0.9em 1.25em;
   border: none;
   font-size: 1em;
-  margin-left: 1.25em;
   border-radius: 0.75em;
   color: white;
 }
-main {
-  display: block;
-}
+
 h1 {
   font-size: 2.5em;
   margin-bottom: 0;
@@ -59,16 +52,6 @@ h1 {
   font-weight: 600;
 }
 
-.col {
-  display: flex;
-  align-items: center;
-}
-
-.col-1 {
-  display: flex;
-  width: 50%;
-  vertical-align: top;
-}
 #icon {
   width: 8em;
   height: 8em;
@@ -89,15 +72,6 @@ h1 {
   margin: 0 3px;
 }
 
-.col-2 {
-  display: block;
-  width: 50%;
-}
-.current-1 {
-  text-align: left;
-  color: #1c363f;
-  font-size: 1em;
-}
 #description,
 #actual-feel,
 #humidity,
@@ -106,12 +80,7 @@ h1 {
   color: #f8f9f9;
   font-weight: bold;
 }
-.current-2 {
-  text-align: center;
-  color: #1c363f;
-  font-size: 1em;
-  margin: 0;
-}
+
 .current-2 span {
   margin: 0 5px;
 }
@@ -157,69 +126,22 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-  .main-container {
-    padding: 30px;
-  }
-
-  header {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 1em;
-  }
-
-  .search-form-input {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .search-button {
-    margin-left: 0;
-    padding: 10px;
-  }
-
-  .col {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .col-1 {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .col-2 {
-    width: 100%;
-    text-align: center;
-  }
-
-  .current-temp {
-    font-size: 4em;
-  }
-  .current-2 {
-    text-align: center;
-  }
-
+@media screen and (max-width: 550px) {
   .weather-forecast {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1.2em;
+    display: block;
   }
   .weather-forecast-date {
     font-size: 1.2em;
+    margin-bottom: 0;
   }
   .weather-forecast-day {
-    margin: 10px 0;
+    margin-bottom: 20px;
   }
   .weather-forecast-icon {
-    width: 6em;
-    height: 6em;
-    margin: 0;
-    padding: 0;
+    width: 7em;
+    height: 7em;
   }
-
-  footer {
-    font-size: 0.9em;
+  .weather-forecast-temperatures {
+    margin-top: 0;
   }
 }
