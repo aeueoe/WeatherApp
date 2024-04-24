@@ -8,5 +8,5 @@ Search a location for forecast data.
 - Unique weather symbols for each forecast description.
 
 
-[Live App](https://teal-sunflower-89322a.netlify.app)/)
+[Live App](https://teal-sunflower-89322a.netlify.app)
 
